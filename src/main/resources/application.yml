@@ -1,0 +1,32 @@
+joinfaces:
+  jsf:
+    PROJECT_STAGE: Production   
+  primefaces:
+    theme: cupertino
+  version: @joinfaces.version@
+spring-boot:
+  version: @project.parent.version@
+tomcat:
+  version: @tomcat.version@
+jetty:
+  version: @jetty.version@
+undertow:
+  version: @undertow.version@
+
+server:
+  port: 9999
+  contextPath: /microweb
+  connection-timeout: 60000
+  max-http-header-size: 2048
+  compression:
+      enabled: true 
+      mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript
+      min-response-size: 4096
+      
+
+
+
+
+    
+  
+    
